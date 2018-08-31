@@ -24,7 +24,7 @@ Total needed crystals = (Yellow Crystals Required - Yellow Crystals Possessed) +
 
 # 988A ([Submission](http://codeforces.com/contest/988/submission/42293658))
 
-First make a map to insert unique numbers\
+First make a map to insert unique numbers
 
 | Numbers          | Positions(i+1)  |
 | :-------------:  | :-------------: |
@@ -34,7 +34,7 @@ First make a map to insert unique numbers\
 
 IF the amount of distinct numbers is less than the amount needed to make a team, Output: "NO" (without quotes)\
 ELSE Output: "YES" (without quotes) and print the positions of the distinct numbers using iterator.\
-How? - Using for loop.\
+How? - Using for loop.
 ```cpp
 auto it = counter.begin();
 for(int i=0; i<k; i++) {
