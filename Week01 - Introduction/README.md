@@ -32,9 +32,9 @@ First make a map to insert unique numbers
 | 12               | 1               |
 | 3                | 2               |\
 
-IF the amount of distinct numbers is less than the amount needed to make a team, Output: "NO" (without quotes)\
-ELSE Output: "YES" (without quotes) and print the positions of the distinct numbers using iterator.\
-How? - Using for loop.
+IF the amount of distinct numbers (plus the first occurence of duplicate ones) is less than the amount needed to make a team, Output: "NO" (without quotes)\
+ELSE Output: "YES" (without quotes) and print the positions of the numbers using iterator.\
+How? - Using for loop and iterator.
 ```cpp
 auto it = counter.begin();
 for(int i=0; i<k; i++) {
