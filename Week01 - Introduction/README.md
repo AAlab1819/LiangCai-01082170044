@@ -47,7 +47,7 @@ for(int i=0; i<k; i++) {
 
 A proper fraction of a/b is when a<b and both cannot be divided by a common factor.\
 First we input n, the maximum amount of (numerator+denominator).\
-If n is an odd number, then assigning numerator to n/2 and its denominator to n/2+1 is enough to make them proper immideately.\
+If n is an odd number, then assigning numerator to floor(n/2) and its denominator to floor(n/2)+1 is enough to make them proper immediately.\
 However, if n is an even number, we should keep them proper by checking the factor of the numerator and comparing it to denominator's factors at the same time.\
-if, say, 'x' is a common factor, decrement the numerator and increment the denominator.\
+if, a common factor was found, decrement the numerator and increment the denominator by one.\
 Output: the numerator and denominator seperated by a space.
