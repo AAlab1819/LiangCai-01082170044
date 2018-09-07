@@ -18,7 +18,7 @@ If say the element that has the lesser index is greater than the one that has gr
 To solve this problem, I used `struct` to avoid C++ [MAP](http://www.cplusplus.com/reference/map/map/)'s auto-sorting.\
 Every dragon has 2 attributes: `strength_requirement` and `strength_reward`.\
 I modified the shell sort to fulfill my needs. Instead of making the argument of my shell sort function to accept integer arrays, I changed it so that it accepts an array of `dragon`s. I sort the dragons based on the smallest `strength_requirement`.\
-After sorting, I iterate through the array and if by some circumstances Kirito can't move forward because the accumulated strength is still less or equal than the needed strength to proceed, ouput `NO` by assigning `false` to the variable `next_level_possible` and break the loop.\
+After sorting, I looped through the array and if by some circumstances Kirito can't move forward because the accumulated strength is still less or equal than the needed strength to proceed, output `NO` by assigning `false` to the variable `next_level_possible` and break the loop.\
 If Kirito managed to go through all dragons, output `YES`.
 
 # 768A ([Submission](https://codeforces.com/contest/768/submission/42602181))
