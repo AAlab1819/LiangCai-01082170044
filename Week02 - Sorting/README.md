@@ -26,6 +26,6 @@ Sorting Method Used: `Bucket Sort`\
 Bucket Sort is similar to Counting Sort. However, the difference between the two is that in Bucket Sort, you have to sort every 'bucket' first before concatenate all of the elements into the final array.\
 In Bucket Sort, we seperate our buckets based on a range, not the number itself. This is the main difference between Bucket Sort and Counting Sort.
 
-The solution to this problem is to sort the `stewards` and count how many lowest number duplicates and how many highest number duplicates that is in the array.\
-After we get the amount of those duplicates, all other elements of the array should have an element that is lesser and an element that is greater.\
-Output the amount of stewards subtracted by the some of the duplicates. This will give you the answer.
+The solution to this problem is to sort the `stewards` and count how many `lowest number duplicates` and how many `highest number duplicates` that is in the array.\
+After we get the amount of those duplicates and exclude them from the array, all other elements of the array should have an element that is lesser and an element that is greater.\
+Output the amount of `stewards` subtracted by the some of the duplicates. This will give you the answer.
