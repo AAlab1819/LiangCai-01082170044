@@ -1,5 +1,5 @@
 # 291A ([Submission](https://codeforces.com/contest/291/submission/42598184))
-Sotring Method Used: *Pancake Sort*
+Sotring Method Used: *Pancake Sort*\
 Pancake Sort is a sorting method that take the highest number from an array, swap that highest number to index 0 and flip the array.\
 This 'flipping' will make the highest number go to the end of the array (which is correct).
 
