@@ -21,10 +21,11 @@ I modified the shell sort to fulfill my needs. Instead of making the argument of
 After sorting, I looped through the array and if by some circumstances Kirito can't move forward because the accumulated strength is still less or equal than the needed strength to proceed, output `NO` by assigning `false` to the variable `next_level_possible` and break the loop.\
 If Kirito managed to go through all dragons, output `YES`.
 
-# 768A ([Submission](https://codeforces.com/contest/768/submission/42602181))
-Sorting Method Used: `Bucket Sort`\
-Bucket Sort is similar to Counting Sort. However, the difference between the two is that in Bucket Sort, you have to sort every 'bucket' first before concatenate all of the elements into the final array.\
-In Bucket Sort, we seperate our buckets based on a range, not the number itself. This is the main difference between Bucket Sort and Counting Sort.
+# 768A ([Submission](https://codeforces.com/contest/768/submission/42694787))
+Sorting Method Used: `Comb Sort`\
+Comb Sort in similar to Bubble Sort.\
+The only difference is that instead of going through the array and compare the numbers one at a time, we compare the numbers with a 'gap'. We determine the gap by dividing the size of the array we want to sort by `1.3`. Then, we compare those two number.\
+For example: If we have an array with the size of 10, then the gap is `int(10/1.3)` which is 7. So, we compare index 0 and index 7. Then we continue to compare index 1 and 8, and so on. After we hit the end (comparing index 2 and 9), we then continue to divide the current gap (7) by 1.3 and repeat the whole process until there is no more swapping or until the gap is equal to one.
 
 The solution to this problem is to sort the `stewards` and count how many `lowest number duplicates` and how many `highest number duplicates` that is in the array.\
 After we get the amount of those duplicates and exclude them from the array, all other elements of the array should have an element that is lesser and an element that is greater.\
