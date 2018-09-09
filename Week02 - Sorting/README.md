@@ -28,5 +28,5 @@ The only difference is that instead of going through the array and compare the n
 For example: If we have an array with the size of 10, then the gap is `int(10/1.3)` which is 7. So, we compare index 0 and index 7. Then we continue to compare index 1 and 8, and so on. After we hit the end (comparing index 2 and 9), we then continue to divide the current gap (7) by 1.3 and repeat the whole process until there is no more swapping or until the gap is equal to one.
 
 The solution to this problem is to sort the `stewards` and count how many `lowest number duplicates` and how many `highest number duplicates` that is in the array.\
-After we get the amount of those duplicates and exclude them from the array, all other elements of the array should have an element that is lesser and an element that is greater.\
-Output the amount of `stewards` subtracted by the some of the duplicates. This will give you the answer.
+After we get the amount of those duplicates and exclude (figuratively) them from the array, all other elements of the array should have an element that is lesser (which is the lowest number) and an element that is greater (which is the highest number).\
+Output the amount of `stewards` subtracted by the sum of the duplicates. This will give you the answer.
