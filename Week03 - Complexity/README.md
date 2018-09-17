@@ -2,7 +2,7 @@
 Vanya and Lantern. Basically you just have to sort the locations and print out the highest distance between (0 to the first lantern), (`highest_gap`/2) and (last lantern to the end of the street).
 
 Worst Case: O(n log n)\
-Average Case: θ(n)\
+Average Case: θ(n log n)\
 Best Case: Ω(n)
 
 # 148A ([Submission](https://codeforces.com/contest/148/submission/42824649))
