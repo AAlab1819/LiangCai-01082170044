@@ -10,7 +10,7 @@ Insomnia Cure. Make a variable to count the damaged dragons (`damaged`) and loop
 
 Worst Case: O(n)\
 Average Case: θ(n)\
-Best Case: Ω(n)
+Best Case: Ω(1) #If you put a conditional to output the amount of dragons if one of `k`, `l`, `m`, `n` is one and end the program.
 
 # 469A ([Submission](https://codeforces.com/contest/469/submission/42824193))
 I Wanna be the Guy. Input the levels that could be done by `little_x` and `little_y` in an array. Combine those arrays, and delete the duplicates.
