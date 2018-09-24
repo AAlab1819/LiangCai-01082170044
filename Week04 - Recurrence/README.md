@@ -43,7 +43,8 @@ After flood filling |
 0 8 0 0 0 0 0 0 0 0 0 ....
   ^ will be used when (for example) answerIndexMap[1][1] is called.
 ```
-For test cases, a value of `x` and `y` will be input. Output the value of `answer` with the index of `answerIndexMap[--y][--x]`. Or in other words `answer[answerIndexMap[--y][--x]]`.
+For test cases, a value of `x` and `y` will be input. Output the value of `answer` with the index of `answerIndexMap[--y][--x]`. Or in other words `answer[answerIndexMap[--y][--x]]`.\
+Worst case Complexity: `O(n*m)`
 
 # 268B ([Submission](https://codeforces.com/contest/268/submission/43358783))
 **Buttons**. You just have to for loop from 1 to the amount of buttons `n`. Every cycle, increment `answer` by the current cycle number `i` multiplied by the result of the amount of buttons `n` subtracted by the current cycle number `i` (note that `n-i` cannot be 0 so, handle it with `max()` or ternary operation. The result of this calculation will give you the answer.\
@@ -85,3 +86,4 @@ Because,
 See the patern where every calculation's sum is equal to 4 (i * n-i) except the last one
 so, we have to uses max() or ternary (becacuse at the last cycle in loop i will be equal to n and i-n is zero).
 ```
+Worst Case Complexity: `O(n)`
