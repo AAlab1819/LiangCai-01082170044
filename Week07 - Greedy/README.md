@@ -36,15 +36,23 @@ Worst Case Complexity: `O(n)`
 
 # 731B ([Submission](https://codeforces.com/contest/731/submission/44468347))
 **Coupons and Discounts**.\
-Make sure every odd number has a pair (different number, but both are odd). If there is an odd number without a pair, print `NO` else print `YES`. If there is a 0 after an odd number, print `NO` also. This is because you can't use the `1-1` combo with the next day.
+Make sure every odd number has a pair (different number, but both are odd). If there is an odd number without a pair, print `NO` else print `YES`. Also, when you encounter an odd number, that means you have to get at least one extra pizza from the upcoming day. For example, when you have an input to be like `3 2 2 2 0` that's a `NO` because you still have to get at least 1 more odd number before `0` to balance out the `3`. So, a `YES` sequence of number would be like: `3 2 3 0` or `3 5 2 0`).
 ```
+Input:
+6
+3 5 2 0 3 1
+Output:
+YES
+Explanation:
+Odd numbers has a pair and there is not any 0 after an odd number.
+
 Input:
 4
 1 3 1 2
 Output:
-YES
+NO
 Explanation:
-On the second day, you can buy the 2 pizza combo and complete the 1-1 combo from the day before.
+There is an odd number without pair.
 
 Input:
 3
