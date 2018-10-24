@@ -3,7 +3,7 @@
 Print the sum of the array. Be sure to make each element absolute.\
 Worst Case Complexity: `O(n)`
 
-# 978A ([Submission](https://codeforces.com/problemset/submission/978/44760581))
+# 978B ([Submission](https://codeforces.com/problemset/submission/978/44760581))
 **File Name**.\
 Linear scan through the string, if x is longer than 2, increment the answer by one each time there is an x next to the continuous two.
 ```
@@ -34,7 +34,7 @@ answer: 2
 ```
 Worst Case Complexity: `O(n)`
 
-# 731A ([Submission](https://codeforces.com/contest/731/submission/44468347))
+# 731B ([Submission](https://codeforces.com/contest/731/submission/44468347))
 **Coupons and Discounts**.\
 Make sure every odd number has a pair (different number, but both are odd). If there is an odd number without a pair, print `NO` else print `YES`. If there is a 0 after an odd number, print `NO` also. This is because you can't use the `1-1` combo with the next day.
 ```
