@@ -16,7 +16,6 @@ Make a map of <long long int,vector(Topic),greater(long long int)> called `separ
 Take care of inputs as usual: `n` is for amount of inputs, `id, z, p, l, c, s` is for Topic ID, current z-score - Z, Posts - P, Likes - L, Comments - C, Shares - S, and `new_topic` to be used later on.
 ```
 Loop n times:
-  new_topic.topic_id = id
   new_topic.topic_id = id;
   new_topic.old_z = z;
   new_topic.new_z = (p*50LL) + (l*5LL) + (c*10LL) + (s*20LL); //LL is because the data type of difference is long long
